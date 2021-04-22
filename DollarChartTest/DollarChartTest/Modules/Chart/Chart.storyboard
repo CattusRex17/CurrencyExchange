@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Chart View-->
+        <scene sceneID="9Bw-JM-8HF">
+            <objects>
+                <viewController storyboardIdentifier="ChartView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="h4N-a6-yJf" customClass="ChartView" customModule="DollarChartTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yqk-bs-UIy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tav-Dv-rLr" customClass="CustomLineChart" customModule="DollarChartTest" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="136.5" width="414" height="545.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Historical Price USD - EUR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ae-tE-DLZ">
+                                <rect key="frame" x="30" y="84" width="354" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zov-VH-HaT">
+                                <rect key="frame" x="30" y="712" width="354" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z2M-Bx-QLY">
+                                        <rect key="frame" x="12" y="5" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="5yl-mU-GdV"/>
+                                            <constraint firstAttribute="width" constant="40" id="76e-qV-Psy"/>
+                                        </constraints>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" red="0.0039215686269999999" green="0.47058823529999999" blue="0.2784313725" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="firstFilter:" destination="h4N-a6-yJf" eventType="touchUpInside" id="dap-pl-WAE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muc-Q6-G14">
+                                        <rect key="frame" x="217" y="5" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="R7p-fy-kJV"/>
+                                            <constraint firstAttribute="height" constant="40" id="uSP-7W-fHS"/>
+                                        </constraints>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" red="0.0039215686269999999" green="0.47058823529999999" blue="0.2784313725" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="thirdFilter:" destination="h4N-a6-yJf" eventType="touchUpInside" id="fEi-D5-D5c"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gP6-a8-v2p">
+                                        <rect key="frame" x="302" y="5" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="UMK-e8-Qdc"/>
+                                            <constraint firstAttribute="height" constant="40" id="vBP-fi-hrT"/>
+                                        </constraints>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" red="0.0039215686269999999" green="0.47058823529999999" blue="0.2784313725" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="fourthFilter:" destination="h4N-a6-yJf" eventType="touchUpInside" id="5ks-Fq-IpB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1NB-bM-hSd">
+                                        <rect key="frame" x="97" y="5" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="5aY-o1-qVT"/>
+                                            <constraint firstAttribute="width" constant="40" id="khM-qp-idN"/>
+                                        </constraints>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" red="0.0039215686269999999" green="0.47058823529999999" blue="0.2784313725" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="secondFilter:" destination="h4N-a6-yJf" eventType="touchUpInside" id="GHo-uu-9em"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="z2M-Bx-QLY" firstAttribute="centerY" secondItem="Zov-VH-HaT" secondAttribute="centerY" id="6A6-Q0-DWZ"/>
+                                    <constraint firstItem="muc-Q6-G14" firstAttribute="centerY" secondItem="Zov-VH-HaT" secondAttribute="centerY" id="Qp0-kR-pPd"/>
+                                    <constraint firstItem="1NB-bM-hSd" firstAttribute="leading" secondItem="z2M-Bx-QLY" secondAttribute="trailing" constant="45" id="ZKK-Pp-tQm"/>
+                                    <constraint firstAttribute="height" constant="50" id="czp-3I-DBJ"/>
+                                    <constraint firstItem="1NB-bM-hSd" firstAttribute="centerY" secondItem="Zov-VH-HaT" secondAttribute="centerY" id="dIx-GZ-6KL"/>
+                                    <constraint firstItem="gP6-a8-v2p" firstAttribute="centerY" secondItem="Zov-VH-HaT" secondAttribute="centerY" id="hOH-2F-2Oc"/>
+                                    <constraint firstItem="gP6-a8-v2p" firstAttribute="leading" secondItem="muc-Q6-G14" secondAttribute="trailing" constant="45" id="klB-gP-Dks"/>
+                                    <constraint firstItem="z2M-Bx-QLY" firstAttribute="leading" secondItem="Zov-VH-HaT" secondAttribute="leading" constant="12" id="skX-ZV-jII"/>
+                                    <constraint firstAttribute="trailing" secondItem="gP6-a8-v2p" secondAttribute="trailing" constant="12" id="t8c-q9-eAV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="79x-U0-GfO"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Tav-Dv-rLr" firstAttribute="trailing" secondItem="79x-U0-GfO" secondAttribute="trailing" id="5Do-na-fEV"/>
+                            <constraint firstItem="Zov-VH-HaT" firstAttribute="centerX" secondItem="79x-U0-GfO" secondAttribute="centerX" id="79S-UO-mPX"/>
+                            <constraint firstItem="Tav-Dv-rLr" firstAttribute="top" secondItem="1ae-tE-DLZ" secondAttribute="bottom" constant="26" id="NLx-pp-dSN"/>
+                            <constraint firstItem="Zov-VH-HaT" firstAttribute="leading" secondItem="79x-U0-GfO" secondAttribute="leading" constant="30" id="XZ6-07-ITm"/>
+                            <constraint firstItem="79x-U0-GfO" firstAttribute="bottom" secondItem="Zov-VH-HaT" secondAttribute="bottom" constant="100" id="cQh-BM-daW"/>
+                            <constraint firstItem="Zov-VH-HaT" firstAttribute="top" secondItem="Tav-Dv-rLr" secondAttribute="bottom" constant="30" id="dw9-jC-5Nl"/>
+                            <constraint firstItem="Tav-Dv-rLr" firstAttribute="leading" secondItem="79x-U0-GfO" secondAttribute="leading" id="eDY-7a-IxV"/>
+                            <constraint firstItem="1ae-tE-DLZ" firstAttribute="leading" secondItem="79x-U0-GfO" secondAttribute="leading" constant="30" id="pwF-s8-e2T"/>
+                            <constraint firstItem="1ae-tE-DLZ" firstAttribute="top" secondItem="79x-U0-GfO" secondAttribute="top" constant="40" id="t6K-7e-zIT"/>
+                            <constraint firstItem="1ae-tE-DLZ" firstAttribute="centerX" secondItem="79x-U0-GfO" secondAttribute="centerX" id="zl5-d2-POR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="chartView" destination="Tav-Dv-rLr" id="yW2-go-f9R"/>
+                        <outlet property="firstButton" destination="z2M-Bx-QLY" id="Rc8-yk-vFg"/>
+                        <outlet property="fourthButton" destination="gP6-a8-v2p" id="8Yx-3w-7to"/>
+                        <outlet property="secondButton" destination="1NB-bM-hSd" id="9kc-Fa-Qct"/>
+                        <outlet property="thirdButton" destination="muc-Q6-G14" id="5r9-8t-kCm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="duL-kT-TE7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31.884057971014496" y="112.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

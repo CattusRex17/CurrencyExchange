@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ChartView.returnChart(data:):ChartView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "valuesDoll">
+            </PersistentString>
+            <PersistentString
+               value = "data">
+            </PersistentString>
+            <PersistentString
+               value = "valuesEuro">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in NetworkManager.getChart(completion:):NetworkManager.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "baseURL">
+            </PersistentString>
+            <PersistentString
+               value = "path">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
